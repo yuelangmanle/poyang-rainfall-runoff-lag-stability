@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 558.694372177124,
+  "bootstrap_tasks": 36,
+  "bootstrap_reps_per_task_season": 2000,
+  "null_reps_per_basin_method": 2000,
+  "output_csv_count": 22
+}

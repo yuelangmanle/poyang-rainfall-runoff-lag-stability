@@ -1,0 +1,16 @@
+﻿year,days_in_year,all7_identical_days,all7_identical_nonzero_days,entire_year_all7_identical
+2006,365,78,0,False
+2007,365,82,0,False
+2008,366,77,0,False
+2009,365,81,0,False
+2010,365,64,0,False
+2011,365,79,0,False
+2012,366,51,0,False
+2013,365,79,0,False
+2014,365,66,0,False
+2015,365,48,0,False
+2016,366,55,0,False
+2017,365,76,0,False
+2018,365,63,0,False
+2019,365,67,0,False
+2020,366,366,165,True

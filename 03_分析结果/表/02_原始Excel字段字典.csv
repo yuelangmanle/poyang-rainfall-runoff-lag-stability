@@ -1,0 +1,10 @@
+﻿适用文件,原始列,字段含义,单位,证据等级,判定依据或限制
+*_rainfall.xlsx,A,Excel日期序号,day serial,推定,与C列日期逐行核对
+*_rainfall.xlsx,B,逐日面平均降水,mm/d,推定,原文件无表头；依据数据集说明、量级与年总量推定
+*_rainfall.xlsx,C,日期,date,验证,2006-01-01至2020-12-31连续
+Changjiang_rainfall.xlsx,E,B列乘10,unknown,未确认/不使用,"2006-2019年共5,113行公式=B行*10，含义和单位不明"
+*_Qobs.xlsx,A,Excel日期序号,day serial,推定,与C列日期逐行核对
+*_Qobs.xlsx,B,逐日径流深,mm/d,六流域公式验证；潦河推定,六流域与F*86.4/面积一致；潦河无F/H列证据
+*_Qobs.xlsx,C,日期,date,验证,2006-01-01至2020-12-31连续
+除Liaohe外的*_Qobs.xlsx,F,逐日实测流量,m3/s,由换算公式推定,H列公式使用F*86.4/面积
+除Liaohe外的*_Qobs.xlsx,H,逐日径流深公式复算,mm/d,公式验证,缓存值与B列逐行一致

@@ -1,0 +1,40 @@
+{
+  "analysis_version": "formal_v1",
+  "bootstrap_reps": 2000,
+  "freeze_date": "2026-07-28",
+  "hydro_summary_bootstrap_reps": 5000,
+  "input_file": "01_数据/处理后数据/七流域_2006-2020_日尺度标准化数据.csv",
+  "input_sha256": "e480776705587755f4d696afd5d73a25dc0bb070aaf27edb0f6ecf93e1e43237",
+  "master_seed": 20260728,
+  "near_peak_thresholds": [
+    0.01,
+    0.02
+  ],
+  "null_methods": [
+    "annual_circular_shift",
+    "within_year_30d_block_permutation"
+  ],
+  "null_reps": 2000,
+  "primary_period": [
+    "2006-01-01",
+    "2019-12-31"
+  ],
+  "primary_search_lags": [
+    0,
+    15
+  ],
+  "sensitivity_period_end": "2020-12-31",
+  "sensitivity_search_lags": [
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      20
+    ]
+  ],
+  "stable_ci_width_days_max": 3.0,
+  "stable_mode_probability_min": 0.5,
+  "workers": 5
+}

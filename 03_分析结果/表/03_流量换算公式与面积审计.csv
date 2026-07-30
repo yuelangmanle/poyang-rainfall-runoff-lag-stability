@@ -1,0 +1,8 @@
+﻿basin_en,basin_cn,area_km2_from_formula,has_discharge_m3s,runoff_depth_unit_status,formula_identity_max_abs_error,cached_H_vs_B_max_abs_error
+Ganjiang,赣江,83500.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0
+Fuhe,抚河,15811.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0
+Xinjiang,信江,17600.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0
+Xiushui,修水,14797.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0
+Liaohe,潦河,,False,QDEPTH_STRUCTURAL_INFERENCE,,
+Le'anhe,乐安河,8534.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0
+Changjiang,昌江,6220.0,True,QDEPTH_FORMULA_VERIFIED,0.0,0.0

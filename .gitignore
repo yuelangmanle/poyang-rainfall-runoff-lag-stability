@@ -1,0 +1,48 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Mendeley raw Excel: obtain from the official source, do not redistribute
+01_数据/公开原始数据/
+01_数据/原始数据/
+01_数据/下载缓存/
+*.xls
+*.xlsx
+
+# Runtime-only files
+.reproduce-tmp/
+reproduce-tmp/
+tmp/
+*.tmp
+*.log

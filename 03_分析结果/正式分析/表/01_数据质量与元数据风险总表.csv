@@ -1,0 +1,8 @@
+﻿basin_en,basin_cn,files_audited,all_dates_complete,missing_values,negative_values,precip_extreme_gt200_count,runoff_extreme_gt50_count,formula_area_km2,runoff_unit_status,precip_unit_status,shared_2020_precipitation_risk,station_identity_verified,metadata_risk_note
+Ganjiang,赣江,2,True,0,0,2,0,83500,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证
+Fuhe,抚河,2,True,0,0,1,1,15811,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证
+Xinjiang,信江,2,True,0,0,1,2,17600,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证
+Xiushui,修水,2,True,0,0,1,0,14797,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证
+Liaohe,潦河,2,True,0,0,1,2,,QDEPTH_STRUCTURAL_INFERENCE,P_UNIT_INFERRED,True,False,潦河无流量换算公式链；坐标元数据存在冲突
+Le'anhe,乐安河,2,True,0,0,3,1,8534,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证
+Changjiang,昌江,2,True,0,0,3,16,6220,QDEPTH_FORMULA_VERIFIED,P_UNIT_INFERRED,True,False,降水单位未在原表明示；具体站点身份未验证

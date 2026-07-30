@@ -1,0 +1,8 @@
+﻿config_id,basin_en,basin_cn,season,block_count,correlation_method,deseason_method,search_max_lag_days,observed_best_lag_days,observed_max_correlation,bootstrap_max_correlation_median,bootstrap_max_correlation_ci025,bootstrap_max_correlation_ci975,bootstrap_best_lag_mode_days,bootstrap_mode_probability,bootstrap_best_lag_ci025,bootstrap_best_lag_ci975,bootstrap_best_lag_ci_width_days,near_peak_001_lag_ranges,near_peak_002_lag_ranges,stability_class,bootstrap_reps
+main_month_median_spearman,Changjiang,昌江,All,14,spearman,month_median,15,2,0.3856155712,0.3853254914,0.3578171425,0.4153502189,2,1,2,2,0,2,2,稳定,2000
+main_month_median_spearman,Fuhe,抚河,All,14,spearman,month_median,15,2,0.422212631,0.4239289016,0.3932849668,0.4555467553,2,0.9985,2,2,0,2,2,稳定,2000
+main_month_median_spearman,Ganjiang,赣江,All,14,spearman,month_median,15,4,0.3415416306,0.3438619673,0.3186560862,0.3696551614,4,0.539,4,5,1,4-5,4-6,稳定,2000
+main_month_median_spearman,Le'anhe,乐安河,All,14,spearman,month_median,15,2,0.3327987219,0.3344149292,0.2426914264,0.4109878004,2,1,2,2,0,2,2,稳定,2000
+main_month_median_spearman,Liaohe,潦河,All,14,spearman,month_median,15,1,0.3709386941,0.3736600876,0.3236188158,0.417511297,1,0.992,1,1,0,1,1-2,稳定,2000
+main_month_median_spearman,Xinjiang,信江,All,14,spearman,month_median,15,2,0.442719948,0.4437475055,0.4254003383,0.463280426,2,1,2,2,0,2,2,稳定,2000
+main_month_median_spearman,Xiushui,修水,All,14,spearman,month_median,15,7,0.1525153825,0.15518637,0.1255045768,0.1904206708,7,0.408,3,10,7,6-8,3-9,不稳定,2000

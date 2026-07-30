@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: >-
+  使用本仓库的软件时，请引用本软件条目；使用研究结论或数据时，
+  还请分别引用论文及上游 Mendeley Data 数据集。
+type: software
+title: "poyang-rainfall-runoff-lag-stability"
+authors:
+  - name: "yuelangmanle"
+version: "1.0.0"
+date-released: "2026-07-30"
+repository-code: "https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability"
+url: "https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.0"
+abstract: >-
+  支撑论文“鄱阳湖七流域降水径流相关滞后及稳定性”的公开复现软件，
+  用于数据审计、降水—径流相关滞后分析、稳定性评估、绘图与产物验证。
+keywords:
+  - rainfall-runoff
+  - lag correlation
+  - stability
+  - Poyang Lake Basin
+  - reproducible research
+license: MIT
