@@ -12,6 +12,9 @@ version: "1.0.1"
 date-released: "2026-07-31"
 repository-code: "https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability"
 url: "https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.1"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21711914"
 abstract: >-
   支撑论文“鄱阳湖七流域降水径流相关滞后及稳定性”的公开复现软件，
   用于数据审计、降水—径流相关滞后分析、稳定性评估、绘图与产物验证。

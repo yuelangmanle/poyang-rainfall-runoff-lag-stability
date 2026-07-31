@@ -91,7 +91,7 @@
 
 使用研究结论时，请引用论文 **“鄱阳湖七流域降水径流相关滞后及稳定性”** 的最终发表版本；使用来源数据或其派生数据时，还应单独引用 CAI Haoran 的 Mendeley Data 数据集及 DOI 10.17632/59bttt5pbj.1。
 
-公开仓库：<https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability>。用于本文复现的冻结版本为 [`v1.0.1`](https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.1)。该版本通过 GitHub release 固定，并在 Zenodo 同步归档；引用时应优先使用 Zenodo 为 `v1.0.1` 分配的版本 DOI。
+公开仓库：<https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability>。用于本文复现的冻结版本为 [`v1.0.1`](https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.1)，对应 Zenodo 固定版本 DOI [10.5281/zenodo.21711914](https://doi.org/10.5281/zenodo.21711914)。引用本文实际复现材料时应使用该固定版本 DOI；概念 DOI [10.5281/zenodo.21711913](https://doi.org/10.5281/zenodo.21711913) 用于指向本软件的全部版本。
 
 ## 许可摘要
 
