@@ -9,6 +9,7 @@ import json
 import os
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 
@@ -18,7 +19,8 @@ DOI = "10.17632/59bttt5pbj.1"
 LICENSE = "CC BY 4.0"
 FILES_API = f"https://data.mendeley.com/api/datasets/{DATASET_ID}/files?version={VERSION}"
 DATACITE_API = f"https://api.datacite.org/dois/{DOI}"
-USER_AGENT = "Poyang-basin-research-data-audit/1.0"
+USER_AGENT = "Poyang-basin-research-data-audit/1.0.1"
+ALLOWED_DOWNLOAD_HOSTS = {"data.mendeley.com", "api.mendeley.com"}
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 RAW_DIR = PROJECT_DIR / "01_数据" / "公开原始数据"
@@ -48,8 +50,25 @@ def save_snapshot_once(path: Path, payload: object) -> None:
     )
 
 
+def validate_filename(value: object) -> str:
+    if not isinstance(value, str) or not value or Path(value).name != value:
+        raise RuntimeError(f"接口返回了不安全的文件名：{value!r}")
+    if Path(value).suffix.lower() != ".xlsx":
+        raise RuntimeError(f"核心文件不是预期的xlsx文件：{value!r}")
+    return value
+
+
+def validate_download_url(value: object) -> str:
+    if not isinstance(value, str):
+        raise RuntimeError(f"接口缺少下载地址：{value!r}")
+    parsed = urlparse(value)
+    if parsed.scheme != "https" or parsed.hostname not in ALLOWED_DOWNLOAD_HOSTS:
+        raise RuntimeError(f"拒绝非白名单HTTPS下载地址：{value!r}")
+    return value
+
+
 def download_verified(item: dict) -> tuple[str, str, int, str]:
-    filename = item["filename"]
+    filename = validate_filename(item.get("filename"))
     details = item["content_details"]
     expected_hash = details["sha256_hash"].lower()
     expected_size = int(details["size"])
@@ -65,7 +84,8 @@ def download_verified(item: dict) -> tuple[str, str, int, str]:
     if part.exists():
         part.unlink()
 
-    request = Request(details["download_url"], headers={"User-Agent": USER_AGENT})
+    download_url = validate_download_url(details.get("download_url"))
+    request = Request(download_url, headers={"User-Agent": USER_AGENT})
     digest = hashlib.sha256()
     size = 0
     try:
@@ -109,7 +129,8 @@ def main() -> None:
         (
             item
             for item in file_items
-            if item["filename"].endswith(("_Qobs.xlsx", "_rainfall.xlsx"))
+            if isinstance(item.get("filename"), str)
+            and item["filename"].endswith(("_Qobs.xlsx", "_rainfall.xlsx"))
         ),
         key=lambda item: item["filename"],
     )
@@ -134,7 +155,7 @@ def main() -> None:
                 "local_size_bytes": local_size,
                 "server_created_date": details["created_date"],
                 "downloaded_at": downloaded_at,
-                "source_url": details["download_url"],
+                "source_url": validate_download_url(details.get("download_url")),
                 "status": status,
             }
         )

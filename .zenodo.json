@@ -1,0 +1,20 @@
+{
+  "title": "Rainfall-Runoff Lag and Stability across Seven Poyang Lake Basins",
+  "upload_type": "software",
+  "description": "Reproducible software, processed data, analysis outputs, and figures supporting the study of rainfall-runoff correlation lag, seasonal differences, and stability across seven sub-basins of the Poyang Lake Basin. The data coverage period is 2006-2020, the main analysis period is 2006-2019, and 2020 is used only in sensitivity scenarios. Analysis code is licensed under the MIT License; processed data, result tables, and figures are licensed under CC BY 4.0. The upstream Mendeley Data Excel files are not redistributed.",
+  "creators": [
+    {
+      "name": "Deng, Zijie",
+      "affiliation": "Jiangxi University of Water Resources and Electric Power"
+    }
+  ],
+  "keywords": [
+    "rainfall-runoff",
+    "lag correlation",
+    "stability",
+    "Poyang Lake Basin",
+    "reproducible research"
+  ],
+  "license": "other-open",
+  "access_right": "open"
+}

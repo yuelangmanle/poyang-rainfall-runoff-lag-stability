@@ -4,11 +4,11 @@
 
 论文题名：**鄱阳湖七流域降水径流相关滞后及稳定性**
 
-本仓库用于公开复现 2006—2020 年鄱阳湖七个典型子流域的降水—径流相关滞后、季节差异与稳定性分析。仓库收录可公开分发的标准化数据、数据审计表、正式分析表、正式分析 5 幅图及论文最终 4 幅图，并提供从来源数据开始的完整复现入口和低重复次数的快速检查入口。
+本仓库用于公开复现数据覆盖期为 2006—2020 年、主分析期为 2006—2019 年的鄱阳湖七个典型子流域降水—径流相关滞后、季节差异与稳定性分析；2020 年仅用于敏感性场景。仓库收录可公开分发的标准化数据、数据审计表、正式分析表、正式分析 5 幅图及论文最终 4 幅图，并提供从来源数据开始的完整复现入口和低重复次数的快速检查入口。
 
 ## 仓库内容
 
-- **01_数据/处理后数据/**：七流域 2006—2020 年日尺度标准化数据及其校验值。
+- **01_数据/处理后数据/**：七流域 2006—2020 年日尺度标准化数据及其校验值；正式主分析使用 2006—2019 年。
 - **02_分析代码/**：下载与校验、数据审计与标准化、正式分析、绘图和结果验证脚本。
 - **03_分析结果/表/**：原始数据结构、字段、换算公式、极端值和重复序列的审计表。
 - **03_分析结果/正式分析/**：正式参数、结果表、5 幅正式分析图、运行摘要及核心产物哈希清单。
@@ -42,7 +42,7 @@
 ## 开始之前
 
 1. 在仓库根目录运行命令。
-2. 按 **环境/** 中的锁定文件准备 Python 与 R 环境。
+2. 按 **环境/** 中的依赖说明准备 Python 与 R 环境。
 3. 保持网络可访问 Mendeley Data，以便脚本从官方来源取得原始 Excel。
 4. 原始 Excel 仅作为本地复现输入，不属于本仓库的分发内容，也不应加入版本控制。
 5. 论文冻结图使用 `Microsoft YaHei` 和 `Helvetica`。如系统没有该中文字体，可在命令前设置 `HYDRO_ZH_FONT` 为本机已安装且覆盖中文字符的字体，例如 macOS 的 `PingFang SC` 或 Linux 常见的 `Noto Sans CJK SC`。替换字体可能改变 PDF/SVG 字节与文字度量，但不改变统计数据。
@@ -87,11 +87,11 @@
 
 ## 如何引用
 
-使用分析代码或整体复现仓库时，请依据 [CITATION.cff](CITATION.cff) 中的软件条目引用 **poyang-rainfall-runoff-lag-stability**，作者实体记为 **yuelangmanle**。
+使用分析代码或整体复现仓库时，请依据 [CITATION.cff](CITATION.cff) 中的软件条目引用 **poyang-rainfall-runoff-lag-stability**，软件作者记为 **Deng, Zijie（邓梓杰）**。
 
 使用研究结论时，请引用论文 **“鄱阳湖七流域降水径流相关滞后及稳定性”** 的最终发表版本；使用来源数据或其派生数据时，还应单独引用 CAI Haoran 的 Mendeley Data 数据集及 DOI 10.17632/59bttt5pbj.1。
 
-公开仓库：<https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability>。用于本文复现的冻结版本为 [`v1.0.0`](https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.0)。该 GitHub release 是版本化链接，并非 DOI；如后续通过 Zenodo 获得 DOI，再优先使用 DOI 引用相应版本。
+公开仓库：<https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability>。用于本文复现的冻结版本为 [`v1.0.1`](https://github.com/yuelangmanle/poyang-rainfall-runoff-lag-stability/releases/tag/v1.0.1)。该版本通过 GitHub release 固定，并在 Zenodo 同步归档；引用时应优先使用 Zenodo 为 `v1.0.1` 分配的版本 DOI。
 
 ## 许可摘要
 
